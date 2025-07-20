@@ -10,7 +10,7 @@
         "id":"2",
         "name": "Credit Card Number",
         "nameFor":"creditCardNo",
-        "nameType":"number",
+        "nameType":"text",
         "namePlaceholder":"16-digit card number (Visa, Mastercard, etc.)"
     },
     {
