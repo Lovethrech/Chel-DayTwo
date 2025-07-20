@@ -19,7 +19,6 @@ import AuthMainBgCtn from './AuthMainBgCtn.vue';
     place-items: center;
 }
 .check-out-main-ctn-mini-ctn{
-    background-color:#8895db31;
     width:50%;
     height:80vh;
     
