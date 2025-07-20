@@ -25,7 +25,10 @@ const iClick=()=>{
 
 <style scoped>
 .auth-main-content-form-main-ctn{
-    margin-top: 3vh;
+    margin-top: 2vh;
+    padding:2vh 2vw;
+    border:2px solid #ffffff71;
+    border-radius: 40px;
 }
 .auth-main-content-form-input-and-label-ctn{
     display:flex;
