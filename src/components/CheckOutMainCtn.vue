@@ -1,11 +1,13 @@
 <script setup>
 import AuthMainBgCtn from './AuthMainBgCtn.vue';
+import AuthMainContentCtn from './AuthMainContentCtn.vue';
 </script>
 
 <template>
     <div class="check-out-main-ctn-main-ctn">
         <div class="check-out-main-ctn-mini-ctn">
             <AuthMainBgCtn></AuthMainBgCtn>
+            <AuthMainContentCtn></AuthMainContentCtn>
         </div>
     </div>
 </template>
