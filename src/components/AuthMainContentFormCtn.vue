@@ -64,7 +64,7 @@ const iClick=()=>{
             />
             <label 
                 :for="creditCardDetails[2].nameFor" 
-                :style="{ top: namePositionPlacement }" 
+                :style="{ top: expirationDateNamePositionPlacement }" 
                 class="auth-main-content-form-label"
             >
                 {{ creditCardDetails[2].name }}
