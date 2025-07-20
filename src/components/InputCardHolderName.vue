@@ -1,7 +1,7 @@
 <script setup>
 import { defineProps } from 'vue';
 
-const {cardHolderName, nameType, iClick, nameFor, placeholder, namePositionPlacement}=defineProps(['cardHolderName', 'nameType', 'iClick', 'nameFor', 'placeholder', 'namePositionPlacement']);
+const {cardHolderName, name, nameType, iClick, nameFor, placeholder, namePositionPlacement}=defineProps(['cardHolderName', 'name', 'nameType', 'iClick', 'nameFor', 'placeholder', 'namePositionPlacement']);
 </script>
 
 <template>

@@ -22,7 +22,11 @@ const iClick=()=>{
 
 <template>
     <form action="" class="auth-main-content-form-main-ctn">
-        
+        <InputCardHolderName
+            :namePositionPlacement="namePositionPlacement"
+            :name="creditCardDetails[0].name"
+        >
+        </InputCardHolderName>
         <div class="auth-main-content-form-input-and-label-ctn">
             <input 
                 v-model="creditCardNo" 
