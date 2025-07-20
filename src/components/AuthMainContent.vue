@@ -9,7 +9,7 @@ import AuthMainContentFormCtn from './AuthMainContentFormCtn.vue';
                 Payment Method
             </h1>
             <p class="auth-main-content-mini-ctn-desc">
-
+                Fill out all input field for successful checkout payment
             </p>
             <AuthMainContentFormCtn></AuthMainContentFormCtn>
         </div>
@@ -19,6 +19,6 @@ import AuthMainContentFormCtn from './AuthMainContentFormCtn.vue';
 <style scoped>
 .auth-main-content-main-ctn{
     color:#fff;
-    
+
 }
 </style>

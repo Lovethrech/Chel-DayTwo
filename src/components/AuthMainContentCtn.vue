@@ -14,6 +14,6 @@ import AuthMainContent from './AuthMainContent.vue';
 
 <style scoped>
 .auth-main-content-ctn-main-ctn{
-    
+    padding: 20px 40px;
 }
 </style>
