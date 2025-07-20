@@ -17,8 +17,20 @@ const iClick=()=>{
 <template>
     <form action="" class="auth-main-content-form-main-ctn">
         <div class="auth-main-content-form-input-and-label-ctn">
-            <input v-model="creditCardNo" type="text" @click="iClick" id="creditCardNo" class="auth-main-content-form-input" />
-            <label for="creditCardNo" :style="{ top: namePositionPlacement }" class="auth-main-content-form-label"> Credit Card No:</label>
+            <input 
+                v-model="creditCardNo" 
+                type="text" 
+                @click="iClick" 
+                id="creditCardNo" 
+                class="auth-main-content-form-input" 
+            />
+            <label 
+                for="creditCardNo" 
+                :style="{ top: namePositionPlacement }" 
+                class="auth-main-content-form-label"
+            >
+                Credit Card No:
+            </label>
         </div>
     </form>
 </template>
