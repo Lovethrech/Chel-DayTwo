@@ -23,4 +23,11 @@ import AuthMainBgCtn from './AuthMainBgCtn.vue';
     height:80vh;
     
 }
+
+@media screen and (max-width:950px) {
+    .check-out-main-ctn-mini-ctn{
+        width:90%;
+        height:80vh;
+    }
+}
 </style>
