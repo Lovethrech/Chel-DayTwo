@@ -28,8 +28,8 @@
         "namePlaceholder":"3-digit (Visa/Mastercard) or 4-digit (Amex) security code, usually on the back or front of the card."
     },
     {
-        "id":"1",
-        "name": "CardHolder's Name",
+        "id":"5",
+        "name": "Billing Address",
         "nameFor":"",
         "nameType":"",
         "namePlaceholder":"The name as it appears on the credit card"
