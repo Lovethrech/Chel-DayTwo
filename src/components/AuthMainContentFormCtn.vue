@@ -1,8 +1,8 @@
 <template>
     <form action="" class="auth-main-content-form-main-ctn">
         <div class="auth-main-content-form-input-and-label-ctn">
-            <input type="text" id="" class="auth-main-content-form-input-ctn"/>
-            <label for="" class="auth-main-content-form-label-ctn"> Credit Card No:</label>
+            <input type="text" id="" class="auth-main-content-form-input"/>
+            <label for="" class="auth-main-content-form-label"> Credit Card No:</label>
         </div>
     </form>
 </template>
@@ -10,5 +10,28 @@
 <style scoped>
 .auth-main-content-form-main-ctn{
     margin-top: 3vh;
+}
+.auth-main-content-form-label{
+    position:absolute;
+    font-size:16px;
+    text-transform:capitalize;
+    letter-spacing:5px;
+    color:rgb(255, 255, 255);
+    font-weight:200;
+    transform: translateY(-50%);
+    transition: all .5s;
+}
+.auth-main-content-form-input{
+    outline:none;
+    background: transparent;
+    color:rgb(255, 255, 255);
+    margin-right:0;
+    width:100%;
+    height:100%;
+    outline:0;
+    border:0;
+    border-bottom:1px solid #ffffff;
+    font-size:18px;
+    padding: 2px 10px;
 }
 </style>
