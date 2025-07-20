@@ -11,11 +11,20 @@
 .auth-main-content-form-main-ctn{
     margin-top: 3vh;
 }
+.auth-main-content-form-input-and-label-ctn{
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    padding:1vh 3px;
+    display:flex;
+    margin: 4vh auto;
+    font-size: 2vh;
+    border-radius: 30px 0 10px 0;
+}
 .auth-main-content-form-label{
     position:absolute;
     font-size:16px;
     text-transform:capitalize;
-    letter-spacing:5px;
     color:rgb(255, 255, 255);
     font-weight:200;
     transform: translateY(-50%);
