@@ -19,6 +19,11 @@ import AuthMainContentFormCtn from './AuthMainContentFormCtn.vue';
 <style scoped>
 .auth-main-content-main-ctn{
     color:#fff;
-
+}
+.auth-main-content-mini-ctn-title{
+    font-weight: 700;
+}
+.auth-main-content-mini-ctn-desc{
+    font-size:14px;
 }
 </style>
