@@ -19,5 +19,6 @@ import AuthMainContentFormCtn from './AuthMainContentFormCtn.vue';
 <style scoped>
 .auth-main-content-main-ctn{
     color:#fff;
+    
 }
 </style>

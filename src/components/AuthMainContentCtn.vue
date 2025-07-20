@@ -11,3 +11,9 @@ import AuthMainContent from './AuthMainContent.vue';
         </div>
     </div>
 </template>
+
+<style scoped>
+.auth-main-content-ctn-main-ctn{
+    
+}
+</style>
