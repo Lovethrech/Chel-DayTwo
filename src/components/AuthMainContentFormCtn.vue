@@ -3,10 +3,12 @@ import {ref} from "vue";
 import creditCardDetails from '@/data/creditCardDetails.json';
 
 const namePositionPlacement=ref("50%");
+const expirationDateNamePositionPlacement=ref("-16px");
 const cardHolderName=ref("");
+const creditCardNo=ref("");
 
 const iClick=()=>{
-    if ((cardHolderName.value==="")||(email!=="")|| (age!=="")||(phoneNumber!=="") || (country!=="")){
+    if ((cardHolderName.value==="")||(creditCardNo.value==="")|| (age!=="")||(phoneNumber!=="") || (country!=="")){
         namePositionPlacement.value="-16px";
     }
     else{
@@ -36,7 +38,7 @@ const iClick=()=>{
         </div>
         <div class="auth-main-content-form-input-and-label-ctn">
             <input 
-                v-model="cardHolderName" 
+                v-model="creditCardNo" 
                 :type="creditCardDetails[1].nameType" 
                 @click="iClick" 
                 :id="creditCardDetails[1].nameFor" 
