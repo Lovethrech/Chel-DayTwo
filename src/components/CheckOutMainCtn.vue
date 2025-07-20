@@ -15,11 +15,12 @@ import AuthMainBgCtn from './AuthMainBgCtn.vue';
     width:100%;
     height:100%;
     display:flex;
-    justify-self: center;
+    justify-content: center;
+    place-items: center;
 }
 .check-out-main-ctn-mini-ctn{
     background-color: azure;
-    width:100%;
+    width:50%;
     height:40vh;
     display:flex;
     justify-content: center;
