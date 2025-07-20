@@ -32,7 +32,7 @@
         "name": "Billing Address",
         "nameFor":"",
         "nameType":"",
-        "namePlaceholder":"The name as it appears on the credit card"
+        "namePlaceholder":"Street address, city, state/province, postal/ZIP code, and country."
     },
     {
         "id":"1",
