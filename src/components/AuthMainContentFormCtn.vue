@@ -23,6 +23,7 @@ const iClick=()=>{
                 :type="creditCardDetails[0].nameType" 
                 @click="iClick" 
                 :id="creditCardDetails[0].nameFor" 
+                :placeholder="creditCardDetails[0].namePlaceholder"
                 class="auth-main-content-form-input" 
             />
             <label 
@@ -30,7 +31,24 @@ const iClick=()=>{
                 :style="{ top: namePositionPlacement }" 
                 class="auth-main-content-form-label"
             >
-                Credit Card No:
+                {{ creditCardDetails[0].name }}
+            </label>
+        </div>
+        <div class="auth-main-content-form-input-and-label-ctn">
+            <input 
+                v-model="cardHolderName" 
+                :type="creditCardDetails[0].nameType" 
+                @click="iClick" 
+                :id="creditCardDetails[0].nameFor" 
+                :placeholder="creditCardDetails[0].namePlaceholder"
+                class="auth-main-content-form-input" 
+            />
+            <label 
+                :for="creditCardDetails[0].nameFor" 
+                :style="{ top: namePositionPlacement }" 
+                class="auth-main-content-form-label"
+            >
+                {{ creditCardDetails[0].name }}
             </label>
         </div>
     </form>
@@ -74,5 +92,10 @@ const iClick=()=>{
     border-bottom:1px solid #ffffff;
     font-size:18px;
     padding: 2px 10px;
+}
+.auth-main-content-form-input::placeholder{
+    text-align: right;
+    color:rgb(255, 255, 255);
+    font-size: 12px;
 }
 </style>
