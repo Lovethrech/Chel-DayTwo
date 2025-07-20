@@ -5,6 +5,7 @@ import AuthMainContent from './AuthMainContent.vue';
 <template>
     <div class="auth-main-content-ctn-main-ctn">
         <div class="auth-main-content-ctn-mini-ctn">
+            <!-- img-ctn  -->
             <AuthMainContent></AuthMainContent>
         </div>
     </div>
