@@ -21,11 +21,11 @@
         "namePlaceholder":"Required to verify card validity"
     },
     {
-        "id":"1",
-        "name": "CardHolder's Name",
-        "nameFor":"",
-        "nameType":"",
-        "namePlaceholder":"The name as it appears on the credit card"
+        "id":"4",
+        "name": "Security Code",
+        "nameFor":"securityCode",
+        "nameType":"number",
+        "namePlaceholder":"3-digit (Visa/Mastercard) or 4-digit (Amex) security code, usually on the back or front of the card."
     },
     {
         "id":"1",
