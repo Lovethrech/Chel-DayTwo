@@ -3,13 +3,21 @@ import {ref} from "vue";
 
 const namePositionPlacement=ref("50%");
 
+const iClick=()=>{
+    if ((fullName!=="")||(email!=="")|| (age!=="")||(phoneNumber!=="") || (country!=="")){
+        namePositionPlacement.value="-16px";
+    }
+    else{
+        namePositionPlacement.value="50%";
+    }
+}
 </script>
 
 <template>
     <form action="" class="auth-main-content-form-main-ctn">
         <div class="auth-main-content-form-input-and-label-ctn">
-            <input type="text" id="" class="auth-main-content-form-input"/>
-            <label for="" :style="{ top: namePositionPlacement }" class="auth-main-content-form-label"> Credit Card No:</label>
+            <input type="text" @click="iClick" id="creditCardNo" class="auth-main-content-form-input" />
+            <label for="creditCardNo" :style="{ top: namePositionPlacement }" class="auth-main-content-form-label"> Credit Card No:</label>
         </div>
     </form>
 </template>
