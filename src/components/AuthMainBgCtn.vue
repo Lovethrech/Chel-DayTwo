@@ -2,8 +2,8 @@
 .landing-page-nav-mini-ctn{
     position:fixed;
     z-index:10;
-    width:50%;
-    height:70%;
+    width:60%;
+    min-height:70vh;
     background-color:rgba(96, 110, 148, 0.342);
     backdrop-filter: blur(10px) saturate(180%);
     border: 10px inset rgba(96, 110, 148, 0.302);
@@ -13,7 +13,7 @@
 @media screen and (max-width:950px) {
     .landing-page-nav-mini-ctn{
         width:90%;
-        height:80vh;
+        min-height:80vh;
     }
 }
 </style>

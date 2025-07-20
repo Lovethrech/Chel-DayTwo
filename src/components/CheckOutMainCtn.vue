@@ -19,15 +19,15 @@ import AuthMainBgCtn from './AuthMainBgCtn.vue';
     place-items: center;
 }
 .check-out-main-ctn-mini-ctn{
-    width:50%;
-    height:80vh;
+    width:60%;
+    min-height:70vh;
     
 }
 
 @media screen and (max-width:950px) {
     .check-out-main-ctn-mini-ctn{
         width:90%;
-        height:80vh;
+        min-height:80vh;
     }
 }
 </style>
