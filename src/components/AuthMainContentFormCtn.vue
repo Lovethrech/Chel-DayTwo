@@ -7,6 +7,7 @@ const expirationDateNamePositionPlacement=ref("-16px");
 const cardHolderName=ref("");
 const creditCardNo=ref("");
 const securityCode=ref("");
+const billingAddress=ref("");
 
 const iClick=()=>{
     if ((cardHolderName.value==="")||(creditCardNo.value==="")|| (age!=="")||(phoneNumber!=="") || (country!=="")){
@@ -88,6 +89,25 @@ const iClick=()=>{
                 class="auth-main-content-form-label"
             >
                 {{ creditCardDetails[3].name }}
+            </label>
+        </div>
+        <div class="auth-main-content-form-input-and-label-ctn">
+            <input 
+                v-model="billingAddress" 
+                :type="creditCardDetails[4].nameType" 
+                min="3"
+                max="3"
+                @click="iClick" 
+                :id="creditCardDetails[4].nameFor" 
+                :placeholder="creditCardDetails[4].namePlaceholder"
+                class="auth-main-content-form-input" 
+            />
+            <label 
+                :for="creditCardDetails[4].nameFor" 
+                :style="{ top: namePositionPlacement }" 
+                class="auth-main-content-form-label"
+            >
+                {{ creditCardDetails[4].name }}
             </label>
         </div>
     </form>
