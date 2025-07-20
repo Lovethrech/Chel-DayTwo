@@ -6,6 +6,7 @@ const namePositionPlacement=ref("50%");
 const expirationDateNamePositionPlacement=ref("-16px");
 const cardHolderName=ref("");
 const creditCardNo=ref("");
+const securityCode=ref("");
 
 const iClick=()=>{
     if ((cardHolderName.value==="")||(creditCardNo.value==="")|| (age!=="")||(phoneNumber!=="") || (country!=="")){
@@ -72,8 +73,10 @@ const iClick=()=>{
         </div>
         <div class="auth-main-content-form-input-and-label-ctn">
             <input 
-                v-model="creditCardNo" 
+                v-model="securityCode" 
                 :type="creditCardDetails[3].nameType" 
+                min="3"
+                max="3"
                 @click="iClick" 
                 :id="creditCardDetails[3].nameFor" 
                 :placeholder="creditCardDetails[3].namePlaceholder"
