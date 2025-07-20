@@ -1,7 +1,7 @@
 <style scoped>
 .landing-page-nav-mini-ctn{
     position:fixed;
-    z-index:10;
+    z-index:-1;
     width:60%;
     min-height:70vh;
     background-color:rgba(96, 110, 148, 0.342);
