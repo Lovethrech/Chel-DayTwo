@@ -31,7 +31,7 @@
         "id":"5",
         "name": "Billing Address",
         "nameFor":"",
-        "nameType":"",
+        "nameType":"range",
         "namePlaceholder":"Street address, city, state/province, postal/ZIP code, and country."
     },
     {
