@@ -114,8 +114,6 @@ const iClick=()=>{
             <input 
                 v-model="billingAddress" 
                 :type="creditCardDetails[5].nameType" 
-                min="3"
-                max="3"
                 @click="iClick" 
                 :id="creditCardDetails[5].nameFor" 
                 :placeholder="creditCardDetails[5].namePlaceholder"
