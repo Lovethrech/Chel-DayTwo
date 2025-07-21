@@ -1,7 +1,6 @@
 <script setup>
 import {ref} from "vue";
 import creditCardDetails from '@/data/creditCardDetails.json';
-import InputCardHolderName from "./InputCardHolderName.vue";
 
 const namePositionPlacement=ref("50%");
 const expirationDateNamePositionPlacement=ref("-16px");
@@ -22,16 +21,23 @@ const iClick=()=>{
 
 <template>
     <form action="" class="auth-main-content-form-main-ctn">
-        <InputCardHolderName
-            :namePositionPlacement="namePositionPlacement"
-            :name="creditCardDetails[0].name"
-            :namePlaceholder="creditCardDetails[0].namePlaceholder"
-            :nameType="creditCardDetails[0].nameType"
-            :nameFor="creditCardDetails[0].nameFor"
-            :cardHolderName="cardHolderName"
-            :iClick="iClick"
-        >
-        </InputCardHolderName>
+        <div class="auth-main-content-form-input-and-label-ctn">
+            <input 
+                v-model="cardHolderName" 
+                :type="creditCardDetails[0].nameType" 
+                @click="iClick" 
+                :id="creditCardDetails[0].nameFor" 
+                :placeholder="creditCardDetails[0].namePlaceholder"
+                class="auth-main-content-form-input" 
+            />
+            <label 
+                :for="creditCardDetails[0].nameFor" 
+                :style="{ top: namePositionPlacement }" 
+                class="auth-main-content-form-label"
+            >
+                {{ creditCardDetails[0].name }}
+            </label>
+        </div>
         <div class="auth-main-content-form-input-and-label-ctn">
             <input 
                 v-model="creditCardNo" 
