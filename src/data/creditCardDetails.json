@@ -39,6 +39,6 @@
         "name": "Email address",
         "nameFor":"emailAddress",
         "nameType":"email",
-        "namePlaceholder":"The name as it appears on the credit card"
+        "namePlaceholder":"For sending a receipt and communication about the purchase."
     }
 ]
