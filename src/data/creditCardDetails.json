@@ -50,11 +50,9 @@
     },
     {
         "id":"8",
-        "name": "Save Card for Future Purchases",
+        "name": "Agree to purchase terms, refund policy, and privacy policy.",
         "nameFor":"emailAddress",
         "nameType":"email",
         "namePlaceholder":"For sending a receipt and communication about the purchase."
-    }
-
-    // agree to purchase terms, refund policy, and privacy policy.
+    }    
 ]
