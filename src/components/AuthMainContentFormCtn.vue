@@ -128,7 +128,24 @@ const iClick=()=>{
                 {{ creditCardDetails[5].name }}
             </label>
         </div>
-        
+        <div class="auth-main-content-form-input-and-label-ctn">
+            <input 
+                v-model="saveCard" 
+                :type="creditCardDetails[6].nameType" 
+                min="3"
+                max="3"
+                @click="iClick" 
+                :id="creditCardDetails[6].nameFor" 
+                class="auth-main-content-form-input-check-box" 
+            />
+            <label 
+                :for="creditCardDetails[4].nameFor" 
+                :style="{ top: namePositionPlacement }" 
+                class="auth-main-content-form-label-check-box"
+            >
+                {{ creditCardDetails[4].name }}
+            </label>
+        </div>
     </form>
 </template>
 
