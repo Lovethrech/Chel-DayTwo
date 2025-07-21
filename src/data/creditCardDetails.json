@@ -45,14 +45,12 @@
         "id":"7",
         "name": "Save Card for Future Purchases",
         "nameFor":"saveCard",
-        "nameType":"email",
-        "namePlaceholder":"For sending a receipt and communication about the purchase."
+        "nameType":"checkbox"
     },
     {
         "id":"8",
         "name": "Agree to purchase terms, refund policy, and privacy policy.",
-        "nameFor":"emailAddress",
-        "nameType":"email",
-        "namePlaceholder":"For sending a receipt and communication about the purchase."
+        "nameFor":"agreeToTAndC",
+        "nameType":"checkbox"
     }    
 ]
