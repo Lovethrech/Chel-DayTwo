@@ -35,9 +35,9 @@
         "namePlaceholder":"Street address, city, state/province, postal/ZIP code, and country."
     },
     {
-        "id":"1",
-        "name": "CardHolder's Name",
-        "nameFor":"",
+        "id":"6",
+        "name": "Email address",
+        "nameFor":"emailAddress",
         "nameType":"",
         "namePlaceholder":"The name as it appears on the credit card"
     }
