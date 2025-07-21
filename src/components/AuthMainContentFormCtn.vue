@@ -8,6 +8,7 @@ const cardHolderName=ref("");
 const creditCardNo=ref("");
 const securityCode=ref("");
 const billingAddress=ref("");
+const emailAddress=ref("");
 
 const iClick=()=>{
     if ((cardHolderName.value==="")||(creditCardNo.value==="")|| (age!=="")||(phoneNumber!=="") || (country!=="")){
@@ -112,7 +113,7 @@ const iClick=()=>{
         </div>
         <div class="auth-main-content-form-input-and-label-ctn">
             <input 
-                v-model="billingAddress" 
+                v-model="emailAddress" 
                 :type="creditCardDetails[5].nameType" 
                 @click="iClick" 
                 :id="creditCardDetails[5].nameFor" 
@@ -127,6 +128,7 @@ const iClick=()=>{
                 {{ creditCardDetails[5].name }}
             </label>
         </div>
+        
     </form>
 </template>
 
