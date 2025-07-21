@@ -9,7 +9,8 @@ const creditCardNo=ref("");
 const securityCode=ref("");
 const billingAddress=ref("");
 const emailAddress=ref("");
-const saveCard=ref(true);
+const saveCard=ref();
+const agreeToTAndC=ref(true);
 
 const iClick=()=>{
     if ((cardHolderName.value==="")||(creditCardNo.value==="")|| (age!=="")||(phoneNumber!=="") || (country!=="")){
@@ -147,18 +148,18 @@ const iClick=()=>{
         </div>
         <div class="auth-main-content-form-input-and-label-ctn-check-box">
             <input 
-                v-model="saveCard" 
-                :type="creditCardDetails[6].nameType" 
+                v-model="agreeToTAndC" 
+                :type="creditCardDetails[7].nameType" 
                 @click="iClick" 
-                :id="creditCardDetails[6].nameFor" 
+                :id="creditCardDetails[7].nameFor" 
                 class="auth-main-content-form-input-check-box" 
             />
             <label 
-                :for="creditCardDetails[6].nameFor" 
+                :for="creditCardDetails[7].nameFor" 
                 :style="{ top: namePositionPlacement }" 
                 class="auth-main-content-form-label-check-box"
             >
-                {{ creditCardDetails[6].name }}
+                {{ creditCardDetails[7].name }}
             </label>
         </div>
     </form>
