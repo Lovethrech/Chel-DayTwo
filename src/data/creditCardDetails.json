@@ -44,7 +44,7 @@
     {
         "id":"7",
         "name": "Save Card for Future Purchases",
-        "nameFor":"emailAddress",
+        "nameFor":"saveCard",
         "nameType":"email",
         "namePlaceholder":"For sending a receipt and communication about the purchase."
     },
