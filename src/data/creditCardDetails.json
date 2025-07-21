@@ -43,7 +43,7 @@
     },
     {
         "id":"7",
-        "name": "Email address",
+        "name": "save Card",
         "nameFor":"emailAddress",
         "nameType":"email",
         "namePlaceholder":"For sending a receipt and communication about the purchase."
