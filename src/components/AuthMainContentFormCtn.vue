@@ -9,6 +9,7 @@ const creditCardNo=ref("");
 const securityCode=ref("");
 const billingAddress=ref("");
 const emailAddress=ref("");
+const saveCard=ref(true);
 
 const iClick=()=>{
     if ((cardHolderName.value==="")||(creditCardNo.value==="")|| (age!=="")||(phoneNumber!=="") || (country!=="")){
@@ -128,22 +129,36 @@ const iClick=()=>{
                 {{ creditCardDetails[5].name }}
             </label>
         </div>
-        <div class="auth-main-content-form-input-and-label-ctn">
+        <div class="auth-main-content-form-input-and-label-ctn-check-box">
             <input 
                 v-model="saveCard" 
                 :type="creditCardDetails[6].nameType" 
-                min="3"
-                max="3"
                 @click="iClick" 
                 :id="creditCardDetails[6].nameFor" 
                 class="auth-main-content-form-input-check-box" 
             />
             <label 
-                :for="creditCardDetails[4].nameFor" 
+                :for="creditCardDetails[6].nameFor" 
                 :style="{ top: namePositionPlacement }" 
                 class="auth-main-content-form-label-check-box"
             >
-                {{ creditCardDetails[4].name }}
+                {{ creditCardDetails[6].name }}
+            </label>
+        </div>
+        <div class="auth-main-content-form-input-and-label-ctn-check-box">
+            <input 
+                v-model="saveCard" 
+                :type="creditCardDetails[6].nameType" 
+                @click="iClick" 
+                :id="creditCardDetails[6].nameFor" 
+                class="auth-main-content-form-input-check-box" 
+            />
+            <label 
+                :for="creditCardDetails[6].nameFor" 
+                :style="{ top: namePositionPlacement }" 
+                class="auth-main-content-form-label-check-box"
+            >
+                {{ creditCardDetails[6].name }}
             </label>
         </div>
     </form>
