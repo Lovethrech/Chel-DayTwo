@@ -1,5 +1,5 @@
 <script setup>
-
+import CheckOutMainCtn from './CheckOutMainCtn.vue';
 </script>
 
 <style scoped>
@@ -21,5 +21,7 @@
 }
 </style>
 <template>
-    <div class="landing-page-nav-mini-ctn"></div>
+    <div class="landing-page-nav-mini-ctn">
+        <CheckOutMainCtn></CheckOutMainCtn>
+    </div>
 </template>
