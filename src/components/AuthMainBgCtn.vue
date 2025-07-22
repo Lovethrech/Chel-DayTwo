@@ -12,6 +12,9 @@ import CheckOutMainCtn from './CheckOutMainCtn.vue';
     backdrop-filter: blur(10px) saturate(180%);
     border: 10px inset rgba(96, 110, 148, 0.302);
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.904);
+    display: flex;
+    place-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width:950px) {
