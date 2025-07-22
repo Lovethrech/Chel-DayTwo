@@ -226,7 +226,7 @@ const iClick=()=>{
 }
 
 
-@media screen and (max-width:830px) {
+@media screen and (max-width:1300px) {
     .auth-main-content-form-input::placeholder{
         color:transparent;
     }
