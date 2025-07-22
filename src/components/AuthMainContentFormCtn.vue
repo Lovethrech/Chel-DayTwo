@@ -214,7 +214,6 @@ const iClick=()=>{
     font-size: 12px;
 }
 .auth-main-content-form-input-and-label-ctn-check-box{
-    
     flex-direction: row;
     gap:10px;
 }
@@ -226,7 +225,6 @@ const iClick=()=>{
     text-transform: uppercase;
     border-radius: 50px;
 }
-
 
 @media screen and (max-width:1300px) {
     .auth-main-content-form-input::placeholder{
