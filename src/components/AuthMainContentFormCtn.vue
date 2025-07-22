@@ -24,7 +24,7 @@ const iClick=()=>{
 
 <template>
     <form action="" class="auth-main-content-form-main-ctn">
-        <div class="auth-main-content-form-input-and-label-ctn">
+        <!-- <div class="auth-main-content-form-input-and-label-ctn">
             <input 
                 v-model="cardHolderName" 
                 :type="creditCardDetails[0].nameType" 
@@ -40,7 +40,7 @@ const iClick=()=>{
             >
                 {{ creditCardDetails[0].name }}
             </label>
-        </div>
+        </div> -->
         <div class="auth-main-content-form-input-and-label-ctn">
             <input 
                 v-model="creditCardNo" 
@@ -210,7 +210,7 @@ const iClick=()=>{
     font-size: 12px;
 }
 .auth-main-content-form-input-and-label-ctn-check-box{
-    
+
 }
 
 @media screen and (max-width:1290px) {
