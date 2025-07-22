@@ -22,7 +22,7 @@ import AuthMainContentCtn from './AuthMainContentCtn.vue';
 }
 .check-out-main-ctn-mini-ctn{
     width:60%;
-    min-height:70vh;
+    min-height:86vh;
     
 }
 
