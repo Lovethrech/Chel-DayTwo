@@ -30,7 +30,7 @@ import AuthMainContentFormCtn from './AuthMainContentFormCtn.vue';
 
 @media screen and (max-width: 900px) {
     .auth-main-content-mini-ctn-title{
-        font-size: ;
+        font-size: 22px;
     }
     .auth-main-content-mini-ctn-desc{
         font-size: 12px;
