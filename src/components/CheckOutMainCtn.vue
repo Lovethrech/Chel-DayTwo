@@ -1,19 +1,19 @@
 <script setup>
-// import AuthMainBgCtn from './AuthMainBgCtn.vue';
-import AuthMainContentCtn from './AuthMainContentCtn.vue';
+import AuthMainContent from './AuthMainContent.vue';
 </script>
 
 <template>
     <div class="check-out-main-ctn-main-ctn">
         <div class="check-out-main-ctn-mini-ctn">
-            <!-- <AuthMainBgCtn></AuthMainBgCtn> -->
-            <AuthMainContentCtn></AuthMainContentCtn>
+            <AuthMainContent></AuthMainContent>
         </div>
     </div>
 </template>
 
 <style scoped>
 .check-out-main-ctn-main-ctn{
+    padding: 20px 40px;
+    background-color: red;
     width:100%;
     height:100%;
     display:flex;
@@ -21,7 +21,8 @@ import AuthMainContentCtn from './AuthMainContentCtn.vue';
     place-items: center;
 }
 .check-out-main-ctn-mini-ctn{
-    width:60%;
+    background-color: orange;
+    width:100%;
     min-height:100%;
     
 }
