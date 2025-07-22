@@ -226,9 +226,9 @@ const iClick=()=>{
 }
 
 
-@media screen and (max-width:1290px) {
-    .auth-main-content-form-input::placeholder:nth-child(4){
-        display:none;
+@media screen and (max-width:830px) {
+    .auth-main-content-form-input::placeholder{
+        color:transparent;
     }
 }
 </style>
