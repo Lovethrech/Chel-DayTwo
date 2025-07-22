@@ -1,7 +1,9 @@
 <script setup>
-import { defineProps } from 'vue';
+import { ref, defineProps } from 'vue';
 
-const {cardHolderName, nameType, nameFor, namePlaceholder, namePositionPlacement, name, iClick}=defineProps(['cardHoldeName', 'nameType', 'nameFor', 'namePlaceholder', 'namePositionPlacement', 'name', 'iClick']);
+const {cardHolderName, nameType, nameFor, namePlaceholder, name}=defineProps(['cardHoldeName', 'nameType', 'nameFor', 'namePlaceholder', 'name']);
+const namePositionPlacement=ref("50%");
+
 const iClickCardHolderName=()=>{
     if ((cardHolderName.value==="")){
         namePositionPlacement.value="-16px";
@@ -16,18 +18,18 @@ const iClickCardHolderName=()=>{
     <div class="auth-main-content-form-input-and-label-ctn">
         <input 
             v-model="cardHolderName" 
-            :type="creditCardDetails[0].nameType" 
+            :type="nameType" 
             @click="iClickCardHolderName" 
-            :id="creditCardDetails[0].nameFor" 
-            :placeholder="creditCardDetails[0].namePlaceholder"
+            :id="nameFor" 
+            :placeholder="namePlaceholder"
             class="auth-main-content-form-input" 
         />
         <label 
-            :for="creditCardDetails[0].nameFor" 
+            :for="nameFor" 
             :style="{ top: namePositionPlacement }" 
             class="auth-main-content-form-label"
         >
-            {{ creditCardDetails[0].name }}
+            {{ name }}
         </label>
     </div>
 </template>

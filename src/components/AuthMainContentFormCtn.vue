@@ -3,8 +3,8 @@ import {ref} from "vue";
 import creditCardDetails from '@/data/creditCardDetails.json';
 import AuthFormCardHolderName from "./auth-form/AuthFormCardHolderName.vue";
 
-const namePositionPlacement=ref("50%");
 const expirationDateNamePositionPlacement=ref("-16px");
+const namePositionPlacement=ref("50%");
 const cardHolderName=ref("");
 const creditCardNo=ref("");
 const securityCode=ref("");
@@ -14,7 +14,7 @@ const saveCard=ref();
 const agreeToTAndC=ref(true);
 
 const iClick=()=>{
-    if ((cardHolderName.value==="")||(creditCardNo.value==="")|| (age!=="")||(phoneNumber!=="") || (country!=="")){
+    if ((creditCardNo.value==="") || (age!=="")||(phoneNumber!=="") || (country!=="")){
         namePositionPlacement.value="-16px";
     }
     else{
@@ -31,7 +31,6 @@ const iClick=()=>{
             :nameType="creditCardDetails[0].nameType"
             :nameFor="creditCardDetails[0].nameFor"
             :namePlaceholder="creditCardDetails[0].namePlaceholder"
-            :namePositionPlacement="creditCardDetails[0].namePositionPlacement"
         >
         </AuthFormCardHolderName>
         <!-- <div class="auth-main-content-form-input-and-label-ctn">
