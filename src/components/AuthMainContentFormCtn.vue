@@ -211,8 +211,8 @@ const iClick=()=>{
 }
 
 @media screen and (max-width:1290px) {
-    .auth-main-content-form-input::placeholder{
-        
+    .auth-main-content-form-input::placeholder:nth-child(4){
+        display:none;
     }
 }
 </style>
