@@ -13,7 +13,7 @@
 @media screen and (max-width:950px) {
     .landing-page-nav-mini-ctn{
         width:90%;
-        min-height:80vh;
+        min-height:90vh;
     }
 }
 </style>
