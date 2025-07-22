@@ -2,6 +2,14 @@
 import { defineProps } from 'vue';
 
 const {cardHolderName, nameType, nameFor, namePlaceholder, namePositionPlacement, name}=defineProps(['cardHoldeName', 'nameType', 'nameFor', 'namePlaceholder', 'namePositionPlacement', 'name']);
+const iClick=()=>{
+    if ((cardHolderName.value==="")){
+        namePositionPlacement.value="-16px";
+    }
+    else{
+        namePositionPlacement.value="50%";
+    }
+}
 </script>
 
 <template>
