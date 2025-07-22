@@ -230,7 +230,7 @@ const iClick=()=>{
     }
 }
 @media screen and (max-width: 900px) {
-    .auth-main-content-form-label, .auth-main-content-form-input{
+    .auth-main-content-form-label, .auth-main-content-form-input, .auth-main-content-form-input-and-label-ctn-check-box{
         font-size: 12px;
     }
 }
