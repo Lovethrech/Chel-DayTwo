@@ -174,8 +174,10 @@ const iClick=()=>{
     border:2px solid #ffffff71;
     border-radius: 40px;
 }
-.auth-main-content-form-input-and-label-ctn{
+.auth-main-content-form-input-and-label-ctn, .auth-main-content-form-input-and-label-ctn-check-box{
     display:flex;
+}
+.auth-main-content-form-input-and-label-ctn{
     flex-direction:column;
     position:relative;
     padding:1vh 3px;
@@ -213,6 +215,8 @@ const iClick=()=>{
 }
 .auth-main-content-form-input-and-label-ctn-check-box{
     
+    flex-direction: row;
+    gap:10px;
 }
 .auth-main-content-form-input-and-label-ctn-submit-btn{
     width:100%;
