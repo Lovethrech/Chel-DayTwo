@@ -1,10 +1,9 @@
 <script setup>
 import {ref} from "vue";
 import creditCardDetails from '@/data/creditCardDetails.json';
-import AuthFormCardHolderName from "./auth-form/AuthFormCardHolderName.vue";
 
-const expirationDateNamePositionPlacement=ref("-16px");
 const namePositionPlacement=ref("50%");
+const expirationDateNamePositionPlacement=ref("-16px");
 const cardHolderName=ref("");
 const creditCardNo=ref("");
 const securityCode=ref("");
@@ -14,7 +13,7 @@ const saveCard=ref();
 const agreeToTAndC=ref(true);
 
 const iClick=()=>{
-    if ((creditCardNo.value==="") || (age!=="")||(phoneNumber!=="") || (country!=="")){
+    if ((cardHolderName.value==="")||(creditCardNo.value==="")|| (age!=="")||(phoneNumber!=="") || (country!=="")){
         namePositionPlacement.value="-16px";
     }
     else{
@@ -25,15 +24,7 @@ const iClick=()=>{
 
 <template>
     <form action="" class="auth-main-content-form-main-ctn">
-        <AuthFormCardHolderName
-            :cardHolderName="cardHolderName"
-            :name="creditCardDetails[0].name"
-            :nameType="creditCardDetails[0].nameType"
-            :nameFor="creditCardDetails[0].nameFor"
-            :namePlaceholder="creditCardDetails[0].namePlaceholder"
-        >
-        </AuthFormCardHolderName>
-        <!-- <div class="auth-main-content-form-input-and-label-ctn">
+        <div class="auth-main-content-form-input-and-label-ctn">
             <input 
                 v-model="cardHolderName" 
                 :type="creditCardDetails[0].nameType" 
@@ -49,7 +40,7 @@ const iClick=()=>{
             >
                 {{ creditCardDetails[0].name }}
             </label>
-        </div> -->
+        </div>
         <div class="auth-main-content-form-input-and-label-ctn">
             <input 
                 v-model="creditCardNo" 
@@ -171,6 +162,9 @@ const iClick=()=>{
                 {{ creditCardDetails[7].name }}
             </label>
         </div>
+        <button type="submit" class="auth-main-content-form-input-and-label-ctn-submit-btn">
+            Make payment
+        </button>
     </form>
 </template>
 
@@ -219,8 +213,13 @@ const iClick=()=>{
     font-size: 12px;
 }
 .auth-main-content-form-input-and-label-ctn-check-box{
-
+    
 }
+.auth-main-content-form-input-and-label-ctn-submit-btn{
+    width:100%;
+    background-color:#fff;
+}
+
 
 @media screen and (max-width:1290px) {
     .auth-main-content-form-input::placeholder:nth-child(4){
