@@ -32,6 +32,7 @@ const iClick=()=>{
             :nameFor="creditCardDetails[0].nameFor"
             :namePlaceholder="creditCardDetails[0].namePlaceholder"
             :namePositionPlacement="creditCardDetails[0].namePositionPlacement"
+            :iClick="iClick"
         >
         </AuthFormCardHolderName>
         <!-- <div class="auth-main-content-form-input-and-label-ctn">
