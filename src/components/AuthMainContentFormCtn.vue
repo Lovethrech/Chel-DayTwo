@@ -1,6 +1,7 @@
 <script setup>
 import {ref} from "vue";
 import creditCardDetails from '@/data/creditCardDetails.json';
+import AuthFormCardHolderName from "./auth-form/AuthFormCardHolderName.vue";
 
 const namePositionPlacement=ref("50%");
 const expirationDateNamePositionPlacement=ref("-16px");
@@ -24,6 +25,14 @@ const iClick=()=>{
 
 <template>
     <form action="" class="auth-main-content-form-main-ctn">
+        <AuthFormCardHolderName
+            :cardHolderName="cardHolderName"
+            :name="creditCardDetails[0].name"
+            :nameType="creditCardDetails[0].nameType"
+            :nameFor="creditCardDetails[0].nameFor"
+            
+        >
+        </AuthFormCardHolderName>
         <!-- <div class="auth-main-content-form-input-and-label-ctn">
             <input 
                 v-model="cardHolderName" 
