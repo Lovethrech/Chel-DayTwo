@@ -52,3 +52,8 @@ main{
         height: 100%;
     }
 }
+@media screen and (max-height: 690px) {
+    main{
+        height: 100%;
+    }
+}
