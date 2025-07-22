@@ -1,8 +1,8 @@
 @import './base.css';
 
 main{
-  width:100%;
-  min-height: 100vh;
+    width:100%;
+    min-height: 100vh;
 }
 
 .auth-main-content-form-input-and-label-ctn{
