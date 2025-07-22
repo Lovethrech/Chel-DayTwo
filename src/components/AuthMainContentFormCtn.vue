@@ -230,7 +230,7 @@ const iClick=()=>{
     }
 }
 @media screen and (max-width: 900px) {
-    .auth-main-content-form-label{
+    .auth-main-content-form-label, .auth-main-content-form-input{
         font-size: 12px;
     }
 }
