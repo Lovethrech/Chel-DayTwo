@@ -27,7 +27,10 @@ import AuthMainContent from './AuthMainContent.vue';
     
 }
 
-@media screen and (max-width:950px) {
+@media screen and (max-width:980px) {
+    .check-out-main-ctn-main-ctn{
+        padding: 20px 10px;
+    }
     .check-out-main-ctn-mini-ctn{
         width:90%;
         min-height:80vh;
