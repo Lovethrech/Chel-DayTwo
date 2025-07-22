@@ -209,6 +209,9 @@ const iClick=()=>{
     color:rgb(255, 255, 255);
     font-size: 12px;
 }
+.auth-main-content-form-input-and-label-ctn-check-box{
+    
+}
 
 @media screen and (max-width:1290px) {
     .auth-main-content-form-input::placeholder:nth-child(4){
