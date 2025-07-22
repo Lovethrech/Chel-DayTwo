@@ -12,7 +12,7 @@ import AuthMainContent from './AuthMainContent.vue';
 
 <style scoped>
 .check-out-main-ctn-main-ctn{
-    padding: 20px 40px;
+    padding: 0 40px;
     width:100%;
     height:100%;
     display:flex;
