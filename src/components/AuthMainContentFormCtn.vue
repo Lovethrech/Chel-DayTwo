@@ -162,6 +162,7 @@ const iClick=()=>{
                 {{ creditCardDetails[7].name }}
             </label>
         </div>
+        <br/>
         <button type="submit" class="auth-main-content-form-input-and-label-ctn-submit-btn">
             Make payment
         </button>
@@ -217,7 +218,11 @@ const iClick=()=>{
 }
 .auth-main-content-form-input-and-label-ctn-submit-btn{
     width:100%;
+    padding: 10px;
     background-color:#fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 50px;
 }
 
 
