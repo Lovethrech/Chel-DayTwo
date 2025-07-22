@@ -46,4 +46,5 @@ body {
   min-height: 100vh;
   background: var(--color-background);
   font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
 }
