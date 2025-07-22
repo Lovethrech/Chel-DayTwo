@@ -209,4 +209,10 @@ const iClick=()=>{
     color:rgb(255, 255, 255);
     font-size: 12px;
 }
+
+@media screen and (max-width:1290px) {
+    .auth-main-content-form-input::placeholder{
+        
+    }
+}
 </style>
