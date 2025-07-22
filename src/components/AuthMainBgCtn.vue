@@ -7,7 +7,7 @@ import CheckOutMainCtn from './CheckOutMainCtn.vue';
     position:fixed;
     z-index:-1;
     width:60%;
-    min-height: inherit;
+    min-height: 90vh;
     background-color:rgba(96, 110, 148, 0.342);
     backdrop-filter: blur(10px) saturate(180%);
     border: 10px inset rgba(96, 110, 148, 0.302);
