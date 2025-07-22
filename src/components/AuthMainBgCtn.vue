@@ -3,7 +3,7 @@
     position:fixed;
     z-index:-1;
     width:60%;
-    min-height:860px;
+    min-height: inherit;
     background-color:rgba(96, 110, 148, 0.342);
     backdrop-filter: blur(10px) saturate(180%);
     border: 10px inset rgba(96, 110, 148, 0.302);
@@ -13,7 +13,6 @@
 @media screen and (max-width:950px) {
     .landing-page-nav-mini-ctn{
         width:90%;
-        min-height:90vh;
     }
 }
 </style>

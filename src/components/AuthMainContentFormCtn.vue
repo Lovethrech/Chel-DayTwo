@@ -6,6 +6,7 @@ const namePositionPlacement=ref("50%");
 const expirationDateNamePositionPlacement=ref("-16px");
 const cardHolderName=ref("");
 const creditCardNo=ref("");
+const expirationDate=ref("");
 const securityCode=ref("");
 const billingAddress=ref("");
 const emailAddress=ref("");
@@ -13,11 +14,8 @@ const saveCard=ref();
 const agreeToTAndC=ref(true);
 
 const iClick=()=>{
-    if ((cardHolderName.value==="")||(creditCardNo.value==="")|| (age!=="")||(phoneNumber!=="") || (country!=="")){
+    if ((cardHolderName.value==="")||(creditCardNo.value==="")|| (expirationDate.value==="")||(securityCode.value==="") || (billingAddress.value==="") || (emailAddress.value==="")){
         namePositionPlacement.value="-16px";
-    }
-    else{
-        namePositionPlacement.value="50%";
     }
 }
 </script>
@@ -60,7 +58,7 @@ const iClick=()=>{
         </div>
         <div class="auth-main-content-form-input-and-label-ctn">
             <input 
-                v-model="cardHolderName" 
+                v-model="expirationDate" 
                 :type="creditCardDetails[2].nameType" 
                 @click="iClick" 
                 :id="creditCardDetails[2].nameFor" 
@@ -229,6 +227,11 @@ const iClick=()=>{
 @media screen and (max-width:1300px) {
     .auth-main-content-form-input::placeholder{
         color:transparent;
+    }
+}
+@media screen and (max-width: 900px) {
+    .auth-main-content-form-label{
+        font-size: 12px;
     }
 }
 </style>
