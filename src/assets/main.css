@@ -2,7 +2,7 @@
 
 main{
   width:100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .auth-main-content-form-input-and-label-ctn{

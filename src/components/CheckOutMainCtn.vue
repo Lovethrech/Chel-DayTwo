@@ -1,12 +1,12 @@
 <script setup>
-import AuthMainBgCtn from './AuthMainBgCtn.vue';
+// import AuthMainBgCtn from './AuthMainBgCtn.vue';
 import AuthMainContentCtn from './AuthMainContentCtn.vue';
 </script>
 
 <template>
     <div class="check-out-main-ctn-main-ctn">
         <div class="check-out-main-ctn-mini-ctn">
-            <AuthMainBgCtn></AuthMainBgCtn>
+            <!-- <AuthMainBgCtn></AuthMainBgCtn> -->
             <AuthMainContentCtn></AuthMainContentCtn>
         </div>
     </div>
@@ -22,7 +22,7 @@ import AuthMainContentCtn from './AuthMainContentCtn.vue';
 }
 .check-out-main-ctn-mini-ctn{
     width:60%;
-    min-height:860px;
+    min-height:100%;
     
 }
 

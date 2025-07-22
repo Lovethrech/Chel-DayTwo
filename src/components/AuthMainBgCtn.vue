@@ -1,3 +1,7 @@
+<script setup>
+
+</script>
+
 <style scoped>
 .landing-page-nav-mini-ctn{
     position:fixed;
