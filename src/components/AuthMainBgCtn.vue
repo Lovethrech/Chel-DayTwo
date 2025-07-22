@@ -22,11 +22,7 @@ import CheckOutMainCtn from './CheckOutMainCtn.vue';
         width:90%;
     }
 }
-@media screen and (max-height: 690px) {
-    .landing-page-nav-mini-ctn{
-        height: 120vh;
-    }
-}
+
 </style>
 <template>
     <div class="landing-page-nav-mini-ctn">

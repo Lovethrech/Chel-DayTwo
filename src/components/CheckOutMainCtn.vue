@@ -21,7 +21,7 @@ import AuthMainContent from './AuthMainContent.vue';
 }
 .check-out-main-ctn-mini-ctn{
     width:100%;
-    min-height:100%;
+    height:100%;
     
 }
 
@@ -31,7 +31,6 @@ import AuthMainContent from './AuthMainContent.vue';
     }
     .check-out-main-ctn-mini-ctn{
         width:90%;
-        min-height:80vh;
     }
 }
 </style>
