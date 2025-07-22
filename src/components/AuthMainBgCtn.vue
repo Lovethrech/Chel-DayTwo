@@ -5,7 +5,7 @@ import CheckOutMainCtn from './CheckOutMainCtn.vue';
 <style scoped>
 .landing-page-nav-mini-ctn{
     position:fixed;
-    z-index:-1;
+    z-index:1;
     width:60%;
     min-height: 90vh;
     background-color:rgba(96, 110, 148, 0.342);
